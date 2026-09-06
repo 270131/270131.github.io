@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>준혁❤민정 결혼합니다
-  2027.1.31 16:40 신도림 라마다</title>
+  2027.01.31 16:40 신도림 라마다</title>
 
 <!-- 폰트 -->
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -1446,7 +1446,7 @@ letter-spacing: 0.02em;
     padding: 0.6rem 0;      /* 좌우 여백 줄여서 폭 확보 */
   }
 }
-/* 달력 위 2026년 2월 제목 */
+/* 달력 위 2027년 1월 제목 */
 .calendar-title {
   font-family: 'Lato', sans-serif;   /* 카운트다운 숫자 폰트 */
   font-size: 1.8rem;                 /* 큼직하게 (카운트다운 숫자 비슷하게) */
@@ -1714,8 +1714,8 @@ letter-spacing: 0.02em;
 </div>
 
 <div class="datetime">2027. 01. 31 (일) 오후 4시 40분</div>
-<!-- 2026년 2월 달력 (일 ~ 토) : 실제 배치에 맞춘 그리드 -->
-<div class="calendar-title">2027. 1</div>
+<!-- 2027년 1월 달력 (일 ~ 토) : 실제 배치에 맞춘 그리드 -->
+<div class="calendar-title">2027. 1.</div>
 <table class="cal" aria-label="2027년 1월 달력">
 <thead>
 <tr>
@@ -2068,7 +2068,7 @@ letter-spacing: 0.02em;
 
 <script>
 function updateDday() {
-const targetDate = new Date('2026-02-08T00:00:00');
+const targetDate = new Date('2027-01-31T00:00:00');
 const today = new Date();
 const diffTime = targetDate - today;
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -2147,7 +2147,7 @@ items.forEach(el=>io.observe(el));
 
     // 오늘 0시 기준 날짜
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    // 2026년 2월 8일 0시 기준 날짜 (월은 0부터라 1=2월)
+    // 2027년 1월 31일 0시 기준 날짜 (월은 0부터라 1=2월)
     const target = new Date(2027, 1, 31);
 
     // 남은 일 수 계산 (위젯이랑 같은 로직)
