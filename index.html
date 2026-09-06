@@ -508,8 +508,8 @@ font-weight: 500;    /* ✅ 살짝 굵게 */
 opacity: 1;          /* ✅ 투명도 제거 */
 }
 
-.hero-names .hero-name:first-child .kor { color: #729C70; } /* 왼쪽(원성수) */
-.hero-names .hero-name:last-child  .kor { color: #729C70; } /* 오른쪽(오한비) */
+.hero-names .hero-name:first-child .kor { color: #729C70; } /* 왼쪽(최준혁) */
+.hero-names .hero-name:last-child  .kor { color: #729C70; } /* 오른쪽(김민정) */
 .hero-names .hero-name .eng { color: #555; }                /* 영문 공통 회색 */
 
 /* 작은 화면 (모바일) 튜닝 */
@@ -1632,14 +1632,14 @@ letter-spacing: 0.02em;
 <!-- ===== 상단 HERO 섹션 (페이지 열자마자 보이는 부분) ===== -->
 <section class="hero" aria-label="커버 사진">
 <!-- 네 커버 사진 경로로 바꿔줘 -->
-<img src="images/46.jpg" alt="원성수 & 오한비" loading="eager">
+<img src="images/1.jpg" alt="최준혁 & 김민정" loading="eager">
 <div class="hero-names">
-<!-- 좌측: 원성수 -->
+<!-- 좌측: 최준혁 -->
 <div class="hero-name" style="text-align:left;">
 <div class="kor"> 준 혁 </div>
 <div class="eng">Joon Hyuk Choi</div>
 </div>
-<!-- 우측: 오한비 -->
+<!-- 우측: 김민정 -->
 <div class="hero-name" style="text-align:right;">
 <div class="kor"> 민 정 </div>
 <div class="eng">Min Jeong Kim</div>
@@ -2148,7 +2148,7 @@ items.forEach(el=>io.observe(el));
     // 오늘 0시 기준 날짜
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     // 2026년 2월 8일 0시 기준 날짜 (월은 0부터라 1=2월)
-    const target = new Date(2026, 1, 8);
+    const target = new Date(2027, 1, 31);
 
     // 남은 일 수 계산 (위젯이랑 같은 로직)
     const diffTime = target - today;
@@ -2156,9 +2156,9 @@ items.forEach(el=>io.observe(el));
 
     const hearts = ''
       + '<span class="count-heart">'
-      +   '<span class="count-name">성수</span>'
+      +   '<span class="count-name">준혁</span>'
       +   '<span class="count-heart-icon">♥</span>'
-      +   '<span class="count-name">한비</span>'
+      +   '<span class="count-name">민정</span>'
       + '</span> ';
 
     if (days > 0) {
@@ -2466,8 +2466,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <footer class="page-footer">
-  <span>made by 한비</span>
-  <span>special thanks to GPT</span>
+  <span>made by 준혁</span>
 </footer>
   
 </body>
