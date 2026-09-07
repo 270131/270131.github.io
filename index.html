@@ -1642,7 +1642,7 @@ letter-spacing: 0.02em;
 <!-- 우측: 김민정 -->
 <div class="hero-name" style="text-align:right;">
 <div class="kor"> 민 정 </div>
-<div class="eng">Min Jeong Kim</div>
+<div class="eng">Min Jung Kim</div>
 </div>
 </div>
 </section>
@@ -2103,19 +2103,16 @@ document.getElementById('popup-img').addEventListener('click', closePopup);
 </script>
 
 <!-- ✅ 카카오 퍼가기: 공식 스니펫(가장 안전한 방식) -->
-<script charset="UTF-8" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-<script charset="UTF-8">
-try {
-new daum.roughmap.Lander({
-"timestamp": "1762877507237",
-"key": "czvqb7c6baj",
-"mapWidth": "100%",  // ✅ 반응형
-"mapHeight": "360"
-}).render();
-} catch (e) {
-console.error("[Kakao RoughMap] 렌더 에러:", e);
-}
-</script>
+<div class="kakao-map">
+    <a href="https://map.kakao.com/?urlX=474665&urlY=1113006&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false"
+       target="_blank">
+
+        <img
+            src="https://staticmap.kakao.com/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=474662&MY=1113005&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo"
+            alt="신도림 라마다 호텔 위치">
+    </a>
+</div>
+  
 <script>
 (function scrollReveal(){
 const items = document.querySelectorAll('.reveal');
