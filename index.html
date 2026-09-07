@@ -263,7 +263,7 @@ width: 100% !important;
 }  
 
 /* 컨테이너 너비도 100% 강제 */
-#daumRoughmapContainer1762877507237 { width: 100% !important; } 
+#daumRoughmapContainer1788779975216 { width: 100% !important; } 
 
 /* === Scroll Reveal 기본 === */
 .reveal {
@@ -600,7 +600,7 @@ font-weight: 500;
 letter-spacing: 0.02em;
 color: #444;                 /* 일시는 진한 회색 */
 margin-top: 1.6rem;
-margin-borrom: 1rem;
+margin-bottom: 1rem;
 }
 
 .intro-text .location_detail2 {
@@ -741,7 +741,7 @@ margin-top: 8rem !important;   /* ⬅️ 위쪽 여백 충분히 확보 */
 width:0.6rem; height:1px; display:inline-block;
 }
 .colon{
-font-size:1.4rem; #8B7A50 !important; align-self:center; margin:0 -0.2rem;
+font-size:1.4rem; color: #8B7A50 !important; align-self:center; margin:0 -0.2rem;
 }
 
 /* 캡션(남은 일수 문장) */
@@ -1135,7 +1135,7 @@ color:#333; padding:.4rem .7rem; border-radius:10px; font-weight:700; cursor:poi
 }
 
 /* 카카오 roughmap 내부도 100% 채우게 */
-#daumRoughmapContainer1762877507237,
+#daumRoughmapContainer1788779975216,
 .root_daum_roughmap.root_daum_roughmap_landing {
   width: 100% !important;
   height: 100% !important;
@@ -1723,7 +1723,7 @@ letter-spacing: 0.02em;
 </tr>
 </thead>
 <tbody>
-<tr><td> </td><td> </td><td> </td><td> </td><td> </td><td>1</td><td class="sat">2</td>></tr>
+<tr><td> </td><td> </td><td> </td><td> </td><td> </td><td>1</td><td class="sat">2</td></tr>
 <tr><td class="sun">3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td class="sat">9</td></tr>
 <tr><td class="sun">10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td class="sat">16</td></tr>
 <tr><td class="sun">17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td class="sat">23</td></tr>
@@ -1923,7 +1923,6 @@ letter-spacing: 0.02em;
     </div>
   </div>
 </section>
-  <p class="account-desc">
 
 <div class="intro-text">
 <div class="kor">우리의 소중한 순간들</div>
@@ -2101,8 +2100,8 @@ document.getElementById('popup-img').addEventListener('click', closePopup);
 <script charset="UTF-8" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 <script charset="UTF-8">
 	new daum.roughmap.Lander({
-		"timestamp" : "1788779737483",
-		"key" : "2ihdxve85wji",
+		"timestamp" : "1788779975216",
+		"key" : "2ihe5ggutjue",
 		"mapWidth" : "640",
 		"mapHeight" : "360"
 	}).render();
@@ -2140,7 +2139,7 @@ items.forEach(el=>io.observe(el));
     // 오늘 0시 기준 날짜
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     // 2027년 1월 31일 0시 기준 날짜 (월은 0부터라 1=2월)
-    const target = new Date(2027, 1, 31);
+    const target = new Date(2027, 0, 31);
 
     // 남은 일 수 계산 (위젯이랑 같은 로직)
     const diffTime = target - today;
